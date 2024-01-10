@@ -1,0 +1,84 @@
+
+.my-post-holder{
+    width: 400px;
+    border-radius: 0 6px 6px 6px;
+    overflow: hidden;
+    background-color: white;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.my-post-holder img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Post details section  */
+
+.my-post-details{
+    padding: 10px 20px 10px 20px;
+}
+
+.my-post-date{
+    font-size: 10px;
+    color: var(--text-color-light);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.my-post-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--text-color-title);
+    letter-spacing: 1px;
+}
+
+.my-post-short-description{
+    font-size: 12px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: var(--text-color-light);
+}
+
+
+/* Read article section */
+.button-section{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    border-radius: 0px 0px 6px 6px;
+    overflow: hidden;
+}
+
+.button-section button{
+    width: 50%;
+    height: 100%;
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.read-btn{
+    background-color: var(--primary-dark);
+}
+.delete-btn{
+    background-color: var(--secondary-red);
+}
+
+
+
+.read-btn:hover{
+    background-color: var(--primary-hover);
+    cursor: pointer;
+}
+.delete-btn:hover{
+    background-color: var(--primary-hover);
+    cursor: pointer;
+}

@@ -1,0 +1,81 @@
+.post-container{
+    width: 400px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    transition: 0.2s;
+    margin-bottom: 20px;
+}
+
+.post-container:hover{
+    box-shadow: 5px 5px 10px var(--shadow);
+    user-select: none;
+}
+
+.post-container img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Post details section  */
+
+.post-details-container{
+    padding: 10px 20px 10px 20px;
+}
+
+.date-of-post{
+    font-size: 10px;
+    color: var(--text-color-light);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.title-of-post{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--text-color-title);
+    letter-spacing: 1px;
+}
+
+.short-description-of-post{
+    font-size: 12px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: var(--text-color-light);
+}
+
+.author-of-post{
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: var(--text-color-light);
+    text-align: right;
+}
+
+
+/* Read article section */
+.read-article-section{
+    width: 100%;
+    height: 45px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: var(--primary-dark);
+    transition: 0.2s;
+}
+
+.read-article-section:hover{
+    background-color: var(--primary-hover);
+    cursor: pointer;
+}
+
+.read-article-section p{
+    font-size: 12px;
+    letter-spacing: 2px;
+}

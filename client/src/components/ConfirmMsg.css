@@ -1,0 +1,43 @@
+.confirmation-container{
+    width: 100%;
+    background-color: var(--primary-background);
+    padding-top: 20px;
+}
+
+.confirmation-box{
+    width: 100%;
+    background-color: var(--primary-dark);
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.confirmation-box p{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.confirmation-button-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirmation-button-container button{
+    width: 48%;
+    height: 30px;
+    border: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    color: var(--primary-dark);
+    background-color: var(--primary-background);
+    transition: 0.3s;
+}
+
+.confirmation-button-container button:hover{
+    background-color: var(--primary-hover);
+    color: white;
+    cursor: pointer;
+}

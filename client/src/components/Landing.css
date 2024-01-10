@@ -1,0 +1,45 @@
+.landing-section{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-dark);
+    margin-bottom: 20px;
+}
+
+.landing-section-left{
+    width: 100%;
+    height: 80%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-section-left h1{
+    color: var(--white);
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.landing-section-left h1 span{
+    color: var(--secondary);
+
+}
+
+.landing-section-left p{
+    color: var(--text-color-light);
+    font-size: 20px;
+    width: 69%;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.landing-section-left button{
+    width: 150px;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 3px 10px;
+    border: none;
+    background-color: var(--secondary);
+    color: var(--text-color-dark);
+}

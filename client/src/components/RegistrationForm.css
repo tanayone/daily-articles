@@ -1,0 +1,69 @@
+.reg-section-container{
+    width: 360px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--primary-dark);
+
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.reg-section-container h3{
+    color: var(--secondary);
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.reg-section-container form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reg-section-container form input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 0 10px 0 10px;
+
+    border: 2px solid var(--secondary);
+    background: transparent;
+    border-radius: 3px 10px 3px 10px;
+    transition: 0.3px;
+    color: var(--white);
+}
+
+.reg-section-container form input:focus{
+    outline: 0;
+}
+
+.reg-section-container form button{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 3px 10px 3px 10px;
+    border: 2px solid var(--secondary);
+    outline: none;
+    overflow: hidden;
+    background-color: var(--secondary);
+    color: var(--text-color-dark);
+    transition: 0.2s;
+}
+
+.reg-section-container form button:hover{
+    background-color: var(--primary-hover);
+    border: 2px solid var(--primary-hover);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.reg-section-container p{
+    color: var(--secondary);
+    font-size: 15px;
+}

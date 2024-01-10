@@ -1,0 +1,14 @@
+.my-post-cotainer{
+    padding: 50px;
+    overflow-x: hidden;
+}
+
+.my-post-cotainer h1{
+    background-color: var(--primary-dark);
+    width: max-content;
+    padding: 6px 30px 5px 20px;
+    color : var(--white);
+    border-radius: 0px 50px 0px 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}

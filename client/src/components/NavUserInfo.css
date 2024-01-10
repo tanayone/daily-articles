@@ -1,0 +1,39 @@
+.user-info-section{
+    display: flex;
+    align-items: center;
+}
+
+.user-info-section p{
+    font-size: 18px;
+    color: var(--white);
+}
+
+/* Nav Buttons */
+
+.nav-button-section{
+    height: 40px;
+    display: flex;
+    user-select: none;
+}
+
+.nav-button-section div{
+    background-color: var(--secondary);
+    margin-left: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.nav-button-section div:hover{
+    background-color: var(--primary-light);
+    cursor: pointer;
+}
+
+.nav-button-section div img{
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,73 @@
+.login-section-container{
+    width: 360px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 10px;
+
+    background-color: var(--primary-dark);
+}
+
+.login-section-container h3{
+    color: var(--secondary);
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.login-section-container form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-section-container form input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 0 10px 0 10px;
+
+    color: var(--white);
+
+    border: 2px solid var(--secondary);
+    border-radius: 3px 10px 3px 10px;
+    transition: 0.3px;
+    background: transparent;
+}
+
+.login-section-container form input:focus{
+    outline: none;
+}
+
+.login-section-container form button{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 3px 10px 3px 10px;
+    border: 2px solid var(--secondary);
+    outline: none;
+    background-color: var(--secondary);
+    color: var(--text-color-dark);
+    transition: 0.2s;
+}
+
+.login-section-container form button:focus{
+    outline: none;
+}
+
+.login-section-container form button:hover{
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.login-section-container p{
+    color: var(--secondary);
+    font-size: 15px;
+}

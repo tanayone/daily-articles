@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+/* :root {
+    --primary-background: #E5E4E2;
+
+    --primary-dark: #333745;
+    --primary-hover: #23252f;
+    --primary-light: #A0DDFF;
+    --secondary: #FDFD96;
+    --secondary-red: #802e2e;
+    --secondary-hover: #5a1d1d;
+    --secondary-dark: #FDFDC3;
+
+    --text-color-dark: #333745;
+    --text-color-light: #8e9098;
+    --text-color-title: #333745;
+
+    --shadow: rgba(0, 0, 0, 0.3);
+
+    --white: #FFFFFF;
+    --gradient-background: linear-gradient(to right, var(--primary-dark), var(--primary-light));
+} */
+
+:root {
+    --primary-background: #e1e1e1;
+
+    --primary-dark: #191d1c;
+    --primary-hover: #000000;
+    --primary-light: #ffe14b;
+    --secondary: #68c8ff;
+    --secondary-red: #802e2e;
+    --secondary-hover: #5a1d1d;
+    --secondary-dark: #FDFDC3;
+
+    --text-color-dark: #191d1c;
+    --text-color-light: #8e9098;
+    --text-color-title: #191d1c;
+
+    --shadow: rgba(0, 0, 0, 0.3);
+
+    --white: #FFFFFF;
+    --gradient-background: linear-gradient(to right, var(--primary-dark), var(--primary-light));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--primary-background);
+}
+
+.App{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+}
