@@ -1,6 +1,6 @@
-package com.dailyarticles.server.objects;
+package com.dailyarticles.server.model;
 
-public class DataForAuth {
+public class AuthenticationInfo {
 
     private String Email;
     private String Password;

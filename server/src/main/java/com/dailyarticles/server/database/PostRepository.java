@@ -1,10 +1,10 @@
 package com.dailyarticles.server.database;
 
-import com.dailyarticles.server.objects.*;
+import com.dailyarticles.server.model.*;
 import org.springframework.jdbc.core.JdbcTemplate;
 import java.util.List;
 
-public class PostingDataMethods {
+public class PostRepository {
 
     private static final JdbcTemplate jdbcTemplate = DatabaseConfig.createJdbcTemplate();
 

@@ -1,15 +1,14 @@
 package com.dailyarticles.server.database;
 
-import com.dailyarticles.server.objects.DataForAuth;
-import com.dailyarticles.server.objects.LongPost;
-import com.dailyarticles.server.objects.User;
-import com.dailyarticles.server.objects.UserProfile;
+import com.dailyarticles.server.model.AuthenticationInfo;
+import com.dailyarticles.server.model.User;
+import com.dailyarticles.server.model.UserProfile;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.List;
 import java.util.Objects;
 
-public class UserDataMethods {
+public class UserRepository {
     private static final JdbcTemplate jdbcTemplate = DatabaseConfig.createJdbcTemplate();
 
     //Check if Email is present
@@ -43,7 +42,7 @@ public class UserDataMethods {
         return jdbcTemplate.queryForObject(queryForPassword, String.class, email);
     }
 
-    public static boolean userAuth(DataForAuth dataForAuth){
+    public static boolean userAuth(AuthenticationInfo dataForAuth){
         String email = dataForAuth.getEmail();
         String password = dataForAuth.getPassword();
         if(emailPresent(email)){

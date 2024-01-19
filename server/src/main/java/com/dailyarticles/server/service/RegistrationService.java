@@ -1,15 +1,14 @@
-package com.dailyarticles.server.services;
+package com.dailyarticles.server.service;
 
-import com.dailyarticles.server.database.UserDataMethods;
-import com.dailyarticles.server.objects.RegistrationResponse;
-import com.dailyarticles.server.objects.User;
-import com.dailyarticles.server.database.UserDataMethods;
+import com.dailyarticles.server.database.UserRepository;
+import com.dailyarticles.server.model.RegistrationResponse;
+import com.dailyarticles.server.model.User;
 
-public class RegistrationHandler {
+public class RegistrationService {
 
     public static RegistrationResponse registerUser(User user){
         String Email = user.getEmail();
-        boolean emailPresent = UserDataMethods.emailPresent(Email);
+        boolean emailPresent = UserRepository.emailPresent(Email);
         RegistrationResponse registrationResponse = new RegistrationResponse();
 
         if(emailPresent){
@@ -17,7 +16,7 @@ public class RegistrationHandler {
             registrationResponse.setRegistration(false);
         }
         else {
-            boolean isRegistered = UserDataMethods.insertNewUser(user);
+            boolean isRegistered = UserRepository.insertNewUser(user);
             if(isRegistered){
                 registrationResponse.setEmail(false);
                 registrationResponse.setRegistration(true);

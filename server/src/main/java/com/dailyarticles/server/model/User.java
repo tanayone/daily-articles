@@ -1,4 +1,4 @@
-package com.dailyarticles.server.objects;
+package com.dailyarticles.server.model;
 
 public class User {
     private String Fullname;
